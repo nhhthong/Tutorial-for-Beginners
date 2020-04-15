@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<style>
+	table{
+		width: 100%;
+		border-collapse: collapse;
+		text-align: center;
+		border-color: blue;
+	}
+	
+	#banner{
+		background-color: darkblue;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	
+	h2{
+		text-align: center;
+		text-transform: uppercase;
+	}
+	
+	.table-title{
+		text-transform: uppercase;
+		background-color: #094FC0;
+		color: white;
+		
+	}
+	
+	.table-title td {
+		padding-bottom: 10px;
+		padding-top: 10px;
+		border-color: white;
+	}
+	
+	.day-time{
+		color: red;
+	}
+	
+	.places{
+		color: orange;
+		text-transform: capitalize;
+		background-color: #33FFFF;
+	}
+</style>
+
+<div id="banner">
+    <img src="images/h12.GIF">
+    <img src="images/logoAirline.gif">
+    <img src="images/h13.GIF">
+</div>
+<h2>lịch trình các chuyến bay</h2>
+<table border="1">
+    <tr class = "table-title">
+        <td rowspan="2">thời gian</td>
+        <td colspan="2">Tuyến</td>
+    </tr>
+    <tr class = "places">
+        <td>nơi đi</td>
+        <td>nơi đến</td>
+    </tr>
+    <tr>
+        <td rowspan="2" class = "day-time">Sáng</td>
+        <td>Hồ Chí Minh</td>
+        <td>Hà Nội</td>
+    </tr>
+    <tr>
+        <td>Hồ Chí Minh</td>
+        <td>Singapore</td>
+    </tr>
+    <tr>
+        <td rowspan="2" class = "day-time">Chiều</td>
+        <td>Hà Nội</td>
+        <td>New York</td>
+    </tr>
+    <tr>
+        <td>Hồ Chí Minh</td>
+        <td>Phú quốc</td>
+    </tr>
+</table>
+
+</body>
+</html>
